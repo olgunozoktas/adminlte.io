@@ -1,29 +1,42 @@
 @extends('layouts.master')
 
 @section('content')
-    <h3>All Categories</h3>
 
-    <table class="table table-responsive">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Modify</th>
-            </tr>
-        </thead>
+   <!-- <div class="container"> -->
 
-        <tbody>
-        @foreach($categories as $category)
-            <tr>
-                <td>{{ $category->title }}</td>
-                <td>{{ $category->description }}</td>
-                <td>
-                <button class="btn btn-info" data-toggle="modal" data-title="{{$category->title}}" data-description="{{$category->description}}" data-target="#edit" data-category_id="{{$category->id}}">Edit</button> / 
-                <button class="btn btn-danger" data-toggle="modal" data-target="#delete" data-category_id="{{$category->id}}">Delete</button></td>
-            </tr>
-        @endforeach
-        </tbody>
-    </table>
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">All Categories</h3>
+            </div>
+            
+            <div class="box-body">
+
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Modify</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                    @foreach($categories as $category)
+                        <tr>
+                            <td>{{ $category->title }}</td>
+                            <td>{{ $category->description }}</td>
+                            <td>
+                            <button class="btn btn-info" data-toggle="modal" data-title="{{$category->title}}" data-description="{{$category->description}}" data-target="#edit" data-category_id="{{$category->id}}">Edit</button> / 
+                            <button class="btn btn-danger" data-toggle="modal" data-target="#delete" data-category_id="{{$category->id}}">Delete</button></td>
+                        </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+            
+            </div>
+        </div>
+    <!--</div>-->
+
 
         <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">

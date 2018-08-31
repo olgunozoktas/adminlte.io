@@ -12,3 +12,7 @@
 6.  font-awesome is required for icons
 7.  JQuery is must be included in the files or by downloading minifed version
 8.  Enjoy :)
+
+## Tutorials & Explanations
+## ACL ([Access Control List](tutorials/acl.md)) -> To Determine If User is Able To Do That
+## [Online User Detection](tutorials/oud.md)

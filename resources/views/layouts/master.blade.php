@@ -70,7 +70,10 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
+        @can('isAdmin')
         <li class="active"><a href="{{ url('category') }}"><i class="fa fa-link"></i> <span>Category</span></a></li>
+        <li><a href="{{url('users')}}"><i class="fa fa-users"></i> <span>Users</span></a></li>
+        @endcan
       </ul>
       <!-- /.sidebar-menu -->
     </section>
