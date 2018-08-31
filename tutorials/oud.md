@@ -79,7 +79,7 @@ Create a custom function to return whether the is online or not
 
 Step 5:
 
-Create a route in web.php to show the online users
+Create a route in web.php to show the online user
 
 ```
 	Add requires namespace
